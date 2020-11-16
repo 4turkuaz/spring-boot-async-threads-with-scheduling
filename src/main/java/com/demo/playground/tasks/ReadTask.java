@@ -21,7 +21,7 @@ public class ReadTask extends Thread {
 
     @Override
     public void run() {
-        LOGGER.info("ReadTask has started for file {}. Time: {}", file.getName(), Calendar.getInstance().getTime());
+        // LOGGER.info("ReadTask has started for file {}. Time: {}", file.getName(), Calendar.getInstance().getTime());
         File directory = new File(FileConfig.OUTPUT_DIR);
 
         if(!directory.exists()) directory.mkdir();

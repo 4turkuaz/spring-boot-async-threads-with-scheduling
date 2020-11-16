@@ -24,6 +24,7 @@ public class ThreadConfig {
         return executor;
     }
 
+    // custom task executor, might be customized to serve
     @Bean(name = "specificTaskExecutor")
     public TaskExecutor specificTaskExecutor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();

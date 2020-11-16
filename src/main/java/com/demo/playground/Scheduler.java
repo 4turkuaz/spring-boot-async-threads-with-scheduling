@@ -5,8 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Calendar;
 
 @Component
 public class Scheduler {
@@ -20,10 +19,7 @@ public class Scheduler {
 
     @Scheduled(fixedRate = 60 * 1000) // per minute
     public void checkFiles() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-        Date now = new Date();
-        String strDate = sdf.format(now);
-        System.out.println("Date now: " + strDate);
+        System.out.println("ReadTasks have been triggered on: " +  Calendar.getInstance().getTime());
         asyncService.checkFiles();
     }
 }

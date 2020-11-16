@@ -34,6 +34,7 @@ public class AsyncService {
     @Async
     public void checkFiles() {
         File[] fileList = new File(FileConfig.INPUT_DIR).listFiles();
+        assert fileList != null;
         for(File eachFile: fileList) {
             ReadTask readTask = applicationContext.getBean(ReadTask.class);
             readTask.setFile(eachFile);

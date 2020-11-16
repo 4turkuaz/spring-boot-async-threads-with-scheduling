@@ -19,7 +19,7 @@ files named {a..z}{0..99} (e.g. a7, z99) and puts 10 random integers with the gi
 mkdir fileDir && mv generate.sh fileDir && cd fileDir
 chmod 655 generate.sh 
 ./generate.sh <MIN_LIMIT> <MAX_LIMIT> # choose limits as you wish
-rm generate.sh
+mv generate.sh ..
 cd ..
 ```
 

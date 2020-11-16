@@ -1,10 +1,10 @@
 # spring-boot-threads-with-scheduling
 
-This is a basic project which only aims to examplify thread usage with scheduling.
+This is a basic project which only aims to examplify async thread usage with scheduling.
 
 After generating some number of files, including integers by each line, using a shell script; the
 numbers are getting summed up to a new file. Each thread is responsible for only one file.
-The whole process will be repeated with delay of 60 seconds a.k.a. scheduled for a minute.
+The whole process will be repeated at one minute intervals. (Scheduled)
 
 ## Usage
 First clone the repository and set the current directory as the projects: 
@@ -36,7 +36,12 @@ FileConfig:
  - INPUT_DIR: Directory that contains files containing integer-valued lines.
  - OUTPUT_DIR: Directory where after processing files, the result will be written into
 
- ThreadConfig:
+ ThreadConfig for ThreadPoolTaskExecutor:
   - corePoolSize: 4
   - maxPoolSize: 4
   - threadNamePrefix: "default_task_executor_thread"
+
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

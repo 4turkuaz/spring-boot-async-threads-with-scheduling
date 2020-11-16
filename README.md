@@ -1,4 +1,4 @@
-# spring-boot-threads-with-scheduling
+# spring-boot-async-threads-with-scheduling
 
 This is a basic project which only aims to examplify async thread usage with scheduling.
 
@@ -9,8 +9,8 @@ The whole process will be repeated at one minute intervals. (Scheduled)
 ## Usage
 First clone the repository and set the current directory as the projects: 
 ```bash
-git clone https://github.com/4turkuaz/spring-boot-threads-with-scheduling
-cd ./spring-boot-threads-with-scheduling
+git clone https://github.com/4turkuaz/spring-boot-async-threads-with-scheduling
+cd ./spring-boot-async-threads-with-scheduling
 ```
 
 There is a script in the main folder named `generate.sh` - which generates 2600 (26*100)

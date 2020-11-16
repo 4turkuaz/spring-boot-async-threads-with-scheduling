@@ -5,7 +5,7 @@
 
 FileConfig:
  - INPUT_DIR: Directory that contains files containing integer-valued lines.
- - OUTPUT_DIR: Directory that after processing files, the result will be written under
+ - OUTPUT_DIR: Directory where after processing files, the result will be written into
 
 
  ThreadConfig:

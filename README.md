@@ -3,7 +3,8 @@
 This is a basic project which only aims to examplify thread usage with scheduling.
 
 After generating some number of files, including integers by each line, using a shell script; the
-numbers are getting summed up to a new file. Each thread is responsible for only one file. 
+numbers are getting summed up to a new file. Each thread is responsible for only one file.
+The whole process will be repeated with delay of 60 seconds a.k.a. scheduled for a minute.
 
 ## Usage
 First clone the repository and set the current directory as the projects: 
